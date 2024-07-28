@@ -110,10 +110,9 @@ body {
 @media (max-width:1250px) {
     .container {
         width: 90vw;
-        height: 65vh;
     }
     .container img {
-        width: 75vw;
+        width: 50%;
     }
     .container h1 {
         font-size: 2.4rem;
