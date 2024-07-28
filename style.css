@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    justify-content: center;
+    border-radius: 10px;
+    border: 3px solid black;
+    box-shadow: 7px 7px 20px black, -7px -7px 20px black;
+}
+
+.container h1 {
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin: 15px;
+}
+
+.container img {
+    margin: auto;
+    width: 22vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.container .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.container .btn {
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: 2px solid black;
+    background-color: rgb(2, 204, 2);
+    border-radius: 8px;
+    padding: 5px;
+    margin: 25px 5px;
+    height: 40px;
+}
+
+.container .button .red {
+    background-color: red;
+}
+
+.container .button .blue {
+    background-color: blue;
+}
+
+.container .button .light {
+    border-radius: 50%;
+    padding: 10px;
+    height: 10px;
+    background-color: red;
+    margin: 35px 5px;
+}
+
+@keyframes moving {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animate1 {
+    animation: moving 0.8s linear infinite normal;
+}
+
+.animate2 {
+    animation: moving 0.6s linear infinite normal;
+}
+
+.animate3 {
+    animation: moving 0.4s linear infinite normal;
+}
+
+.animate4 {
+    animation: moving 0.2s linear infinite normal;
+}
+
+@keyframes stopMoving {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.animate5 {
+    animation: stopMoving 0.7s linear infinite normal;
+}
